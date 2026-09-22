@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sarayu Channa | Developer Portfolio</title>
+
+    <meta
+        name="description"
+        content="Sarayu Channa's developer portfolio showcasing software, AI and machine learning projects."
+    >
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b1020;
+            color: #f5f7ff;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(1100px, 90%);
+            margin: auto;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(11, 16, 32, 0.95);
+            border-bottom: 1px solid #27304a;
+        }
+
+        .nav-content {
+            min-height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #7c8cff;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #c8cde0;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #8f9cff;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 8px 15px;
+            border: 1px solid #39456b;
+            border-radius: 30px;
+            color: #aeb8ff;
+            margin-bottom: 20px;
+            background: #121a33;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 7vw, 76px);
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #8996ff;
+        }
+
+        .hero p {
+            max-width: 700px;
+            font-size: 19px;
+            color: #b9bfd3;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 22px;
+            border-radius: 8px;
+            font-weight: bold;
+            border: 1px solid #5967b5;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #6978e8;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .section-description {
+            color: #aeb5c9;
+            max-width: 700px;
+            margin-bottom: 40px;
+        }
+
+        /* ABOUT */
+
+        .about-box {
+            background: #121a2e;
+            border: 1px solid #283452;
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .about-box p {
+            color: #c2c7d7;
+            margin-bottom: 15px;
+        }
+
+        /* SKILLS */
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            padding: 10px 16px;
+            background: #151e38;
+            border: 1px solid #34416a;
+            border-radius: 8px;
+            color: #d8dcff;
+        }
+
+        /* PROJECTS */
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #121a2e;
+            border: 1px solid #283452;
+            border-radius: 15px;
+            padding: 28px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-6px);
+            border-color: #6676d7;
+        }
+
+        .project-card h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #b8bfd1;
+            margin-bottom: 20px;
+        }
+
+        .tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 22px;
+        }
+
+        .tech span {
+            font-size: 13px;
+            padding: 6px 10px;
+            background: #1b2643;
+            border-radius: 6px;
+            color: #cbd1ff;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .project-links a {
+            color: #9ca8ff;
+            font-weight: bold;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* EDUCATION */
+
+        .education-card {
+            background: #121a2e;
+            border: 1px solid #283452;
+            border-radius: 15px;
+            padding: 28px;
+        }
+
+        .education-card h3 {
+            margin-bottom: 8px;
+        }
+
+        .education-card p {
+            color: #b8bfd1;
+        }
+
+        /* CONTACT */
+
+        .contact-box {
+            text-align: center;
+            background: #121a2e;
+            border: 1px solid #283452;
+            border-radius: 15px;
+            padding: 50px 25px;
+        }
+
+        .contact-box p {
+            color: #b8bfd1;
+            margin: 15px auto 25px;
+            max-width: 650px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            border-top: 1px solid #27304a;
+            padding: 25px 0;
+            text-align: center;
+            color: #858da5;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 750px) {
+            .nav-content {
+                flex-direction: column;
+                padding: 15px 0;
+                gap: 12px;
+            }
+
+            .nav-links {
+                gap: 12px;
+                font-size: 14px;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+        <div class="container nav-content">
+
+            <div class="logo">
+                Sarayu<span>.</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+
+    <header class="hero">
+        <div class="container hero-content">
+
+            <div class="tag">
+                B.Tech Student • AI/ML • Software Development
+            </div>
+
+            <h1>
+                Hi, I'm <span>Sarayu Channa.</span>
+            </h1>
+
+            <p>
+                I build practical software and AI-powered applications
+                that solve real-world problems. I'm currently developing
+                my skills in Python, Java, Data Structures & Algorithms,
+                Artificial Intelligence and Machine Learning.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    class="btn btn-primary"
+                    href="#projects"
+                >
+                    View My Projects
+                </a>
+
+                <a
+                    class="btn btn-secondary"
+                    href="https://github.com/2410080013-oss"
+                    target="_blank"
+                >
+                    GitHub
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                About Me
+            </h2>
+
+            <p class="section-description">
+                A little about who I am and what I enjoy building.
+            </p>
+
+            <div class="about-box">
+
+                <p>
+                    I'm a B.Tech student interested in software development,
+                    Artificial Intelligence and Machine Learning.
+                </p>
+
+                <p>
+                    I enjoy turning ideas into working applications and
+                    learning by building real projects.
+                </p>
+
+                <p>
+                    My current focus is improving my programming,
+                    problem-solving and AI development skills while
+                    building projects that I can use in my portfolio.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+
+    <section id="skills">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Technical Skills
+            </h2>
+
+            <p class="section-description">
+                Technologies and areas I'm currently working with.
+            </p>
+
+            <div class="skills">
+
+                <div class="skill">Python</div>
+                <div class="skill">Java</div>
+                <div class="skill">C</div>
+                <div class="skill">Data Structures & Algorithms</div>
+                <div class="skill">Artificial Intelligence</div>
+                <div class="skill">Machine Learning</div>
+                <div class="skill">TensorFlow</div>
+                <div class="skill">Keras</div>
+                <div class="skill">OpenCV</div>
+                <div class="skill">Streamlit</div>
+                <div class="skill">Generative AI</div>
+                <div class="skill">Git</div>
+                <div class="skill">GitHub</div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+
+    <section id="projects">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Featured Projects
+            </h2>
+
+            <p class="section-description">
+                A selection of projects I've built while learning
+                software development and AI.
+            </p>
+
+            <div class="projects">
+
+
+                <!-- PROJECT 1 -->
+
+                <div class="project-card">
+
+                    <h3>
+                        🤖 Smart Student Buddy
+                    </h3>
+
+                    <p>
+                        An AI-powered student assistant that helps students
+                        solve doubts, create study plans, process notes,
+                        generate quizzes and get general college assistance.
+                    </p>
+
+                    <div class="tech">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>Gemini AI</span>
+                        <span>Google GenAI</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/2410080013-oss/smart-student-buddy"
+                            target="_blank"
+                        >
+                            GitHub →
+                        </a>
+
+                        <a
+                            href="https://smart-student-buddy.streamlit.app/"
+                            target="_blank"
+                        >
+                            Live Demo →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PROJECT 2 -->
+
+                <div class="project-card">
+
+                    <h3>
+                        😊 Real-Time Facial Expression Detection
+                    </h3>
+
+                    <p>
+                        A deep-learning application that detects visible
+                        facial expressions from a webcam using a CNN trained
+                        with the FER-2013 dataset.
+                    </p>
+
+                    <div class="tech">
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>Keras</span>
+                        <span>CNN</span>
+                        <span>OpenCV</span>
+                        <span>FER-2013</span>
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/2410080013-oss/real-time-emotion-detection"
+                            target="_blank"
+                        >
+                            GitHub →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FUTURE PROJECT -->
+
+                <div class="project-card">
+
+                    <h3>
+                        🚀 More Projects Coming Soon
+                    </h3>
+
+                    <p>
+                        I'm continuously building and learning.
+                        New software, AI and machine-learning projects
+                        will be added here as I complete them.
+                    </p>
+
+                    <div class="tech">
+                        <span>Learning</span>
+                        <span>Building</span>
+                        <span>Improving</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+
+    <section id="education">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Education
+            </h2>
+
+            <div class="education-card">
+
+                <h3>
+                    B.Tech
+                </h3>
+
+                <p>
+                    Currently pursuing undergraduate studies in engineering
+                    and building practical skills through software and
+                    AI projects.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <div class="contact-box">
+
+                <h2 class="section-title">
+                    Let's Connect
+                </h2>
+
+                <p>
+                    I'm interested in learning, building projects and
+                    connecting with other developers and technology
+                    enthusiasts.
+                </p>
+
+                <div class="buttons">
+
+                    <a
+                        class="btn btn-primary"
+                        href="https://github.com/2410080013-oss"
+                        target="_blank"
+                    >
+                        GitHub
+                    </a>
+
+                    <!-- Add your LinkedIn URL here later -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                © 2026 Sarayu Channa • Built with HTML & CSS
+            </p>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
