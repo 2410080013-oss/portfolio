@@ -1,35 +1,252 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sarayu Channa — Developer Portfolio</title>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#05060a">
+<meta name="description" content="Sarayu Channa — cinematic developer portfolio, projects, evidence and build log.">
+<title>SARAYU // SYSTEM</title>
 <style>
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#07080c;color:#f5f6fa;font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.6}
-a{color:inherit;text-decoration:none}.wrap{width:min(92%,1180px);margin:auto}
-nav{position:fixed;top:0;left:0;right:0;z-index:5;background:#07080ccc;backdrop-filter:blur(15px);border-bottom:1px solid #ffffff10}
-.nav{height:68px;display:flex;justify-content:space-between;align-items:center}.logo{font-weight:800;letter-spacing:.12em;font-size:.85rem}.navlinks{display:flex;gap:22px;color:#b7bdc9;font-size:.9rem}
-.hero{min-height:100vh;display:grid;align-items:center;padding-top:80px;background:radial-gradient(circle at 85% 20%,#5b4be533,transparent 35%)}
-.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:65px;align-items:center}.kicker,.label{color:#54dfff;text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;font-weight:800}
-h1{font-size:clamp(3.4rem,8vw,7rem);line-height:.92;letter-spacing:-.06em;margin:18px 0}.grad{background:linear-gradient(110deg,#fff,#aaa2ff,#5fe0ff);color:transparent;background-clip:text}
-.lead{color:#9da4b3;max-width:760px;font-size:1.08rem}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:11px 17px;border:1px solid #303642;border-radius:999px;background:#11141b;font-weight:700}.primary{background:#fff;color:#08090c;border-color:#fff}
-.portrait{width:min(100%,390px);aspect-ratio:4/5;object-fit:cover;border-radius:28px;border:1px solid #303642;box-shadow:0 30px 90px #0009}
-section{padding:105px 0;border-top:1px solid #ffffff09}h2{font-size:clamp(2.2rem,5vw,4rem);line-height:1;letter-spacing:-.045em;margin:10px 0 18px}
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:42px}.card{padding:22px;border:1px solid #252a35;border-radius:20px;background:#10131a}.card strong{font-size:1.7rem;display:block}.muted{color:#8f97a6}
-.project{margin-top:28px;padding:28px;border:1px solid #252a35;border-radius:26px;background:linear-gradient(145deg,#11141c,#090a0e)}.projecttop{display:flex;justify-content:space-between;align-items:end;gap:20px}.project h3{font-size:2rem;margin:4px 0}.tags{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 22px}.tag{padding:6px 10px;border-radius:999px;background:#191d27;color:#c7ccd6;font-size:.78rem}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.gallery img,.wide img{width:100%;border-radius:15px;border:1px solid #2a303a;display:block;background:#0a0b0f}.wide{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:13px}
-.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.skill{padding:11px 14px;border:1px solid #2b303b;border-radius:13px;background:#0f1218}.timeline{border-left:1px solid #303541;padding-left:25px;margin-top:35px}.item{margin:0 0 32px;position:relative}.item:before{content:"";position:absolute;left:-31px;top:8px;width:10px;height:10px;border-radius:50%;background:#8b7cff}
-footer{padding:38px 0;border-top:1px solid #ffffff09;color:#737b89}
-@media(max-width:850px){.grid{grid-template-columns:1fr}.portrait{max-width:330px}.stats{grid-template-columns:1fr 1fr}.gallery,.wide{grid-template-columns:1fr}.navlinks{display:none}}@media(max-width:520px){.stats{grid-template-columns:1fr}}
-</style></head><body>
-<nav><div class="wrap nav"><div class="logo">SARAYU // BUILD LOG</div><div class="navlinks"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#journey">Journey</a><a href="#contact">Contact</a></div></div></nav>
-<header class="hero"><div class="wrap grid"><div><div class="kicker">B.Tech Student · Software + AI</div><h1>Building things<br><span class="grad">that can be used.</span></h1><p class="lead">I'm Sarayu Channa — an aspiring software developer and AI/ML enthusiast focused on turning ideas into practical applications.</p><div class="buttons"><a class="btn primary" href="#projects">Explore my work ↓</a><a class="btn" href="https://github.com/2410080013-oss" target="_blank">GitHub ↗</a></div></div><img class="portrait" src="assets/sarayu-photo.jpg" alt="Sarayu Channa"></div></header>
-<section id="about"><div class="wrap"><div class="label">01 / About</div><h2>A student portfolio,<br>built like a product.</h2><p class="lead">I enjoy building practical software and AI-powered applications while strengthening Python, Java, DSA, machine learning and software development skills.</p><div class="stats"><div class="card"><strong>02</strong><span class="muted">Featured projects</span></div><div class="card"><strong>AI</strong><span class="muted">Application focus</span></div><div class="card"><strong>Python</strong><span class="muted">Primary build language</span></div><div class="card"><strong>GitHub</strong><span class="muted">Public project work</span></div></div></div></section>
-<section id="projects"><div class="wrap"><div class="label">02 / Featured work</div><h2>Projects with evidence.</h2><p class="lead">Working interfaces, model outputs and training evidence — not just a list of technologies.</p>
-<div class="project"><div class="projecttop"><div><div class="label">01 / AI APPLICATION</div><h3>Smart Student Buddy</h3></div><a class="btn" href="https://smart-student-buddy.streamlit.app/" target="_blank">Live Demo ↗</a></div><p>AI-powered college assistant with AI Doubt Solver, Study Planner, Notes Assistant, Quiz Generator and College Assistant.</p><div class="tags"><span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Google Gemini</span><span class="tag">Generative AI</span></div><div class="gallery">
-<img src="assets/smart-home.png"><img src="assets/smart-ai-doubt-solver.png"><img src="assets/smart-study-planner.png"><img src="assets/smart-notes.png"><img src="assets/smart-quiz.png"><img src="assets/smart-college-assistant.png"></div></div>
-<div class="project"><div class="projecttop"><div><div class="label">02 / DEEP LEARNING + COMPUTER VISION</div><h3>Real-Time Facial Expression Detection</h3></div><a class="btn" href="https://github.com/2410080013-oss/real-time-emotion-detection" target="_blank">GitHub ↗</a></div><p>TensorFlow/Keras CNN project using FER-2013 and OpenCV to classify visible facial expressions. The portfolio uses model-evaluation evidence without requiring a personal webcam photo.</p><div class="tags"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Keras</span><span class="tag">CNN</span><span class="tag">OpenCV</span><span class="tag">FER-2013</span></div><div class="wide"><img src="assets/emotion-accuracy.png"><img src="assets/emotion-loss.png"></div><div class="wide"><img src="assets/emotion-confusion-matrix.png"></div></div>
+:root{
+  --bg:#05060a;--panel:#0b0e14;--panel2:#0e121a;--line:#202733;
+  --text:#f5f7fb;--muted:#8e98a9;--cyan:#63e6ff;--violet:#9d8cff;
+  --green:#72f2a0;--red:#ff7f96;--yellow:#ffd76a;
+  --max:1220px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.55;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.06;background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);background-size:55px 55px;mask-image:linear-gradient(to bottom,#000,transparent 75%)}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.wrap{width:min(92%,var(--max));margin:auto}
+.nav{position:fixed;top:0;left:0;right:0;z-index:30;height:68px;background:#05060ae8;border-bottom:1px solid #ffffff10;backdrop-filter:blur(18px)}
+.navin{height:100%;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:.78rem;font-weight:900;letter-spacing:.18em}
+.navlinks{display:flex;gap:18px;color:#aab3c1;font-size:.78rem}
+.navlinks a:hover{color:white}
+.menu{display:none;border:1px solid var(--line);background:#0b0e14;color:white;border-radius:10px;padding:8px 10px}
+.hero{min-height:100vh;display:grid;align-items:center;position:relative;padding:120px 0 70px;overflow:hidden}
+.orb{position:absolute;width:520px;height:520px;border-radius:50%;filter:blur(90px);opacity:.18;pointer-events:none}
+.o1{background:#6556ff;right:-150px;top:100px}.o2{background:#00c8ff;left:-230px;bottom:-280px}
+.boot{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;color:#7e8a9c;font-size:.72rem;letter-spacing:.08em;margin-bottom:30px}
+.boot b{color:var(--green)}
+.heroGrid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:center}
+.kicker,.label{color:var(--cyan);text-transform:uppercase;letter-spacing:.2em;font-size:.7rem;font-weight:900}
+h1{font-size:clamp(4rem,9vw,8.5rem);line-height:.82;letter-spacing:-.075em;margin:16px 0 26px}
+.grad{background:linear-gradient(110deg,#fff,#a99fff,#60e7ff);color:transparent;background-clip:text;-webkit-background-clip:text}
+.lead{color:#9ca6b5;max-width:780px;font-size:1.06rem}
+.buttons{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.btn{border:1px solid #2c3442;background:#0d1118;padding:11px 16px;border-radius:999px;color:#eaf0f7;font-weight:800;cursor:pointer}
+.btn:hover{border-color:#59667a;transform:translateY(-1px)}
+.primary{background:#f5f7fb;color:#07080b;border-color:#fff}
+.portrait{width:min(100%,390px);aspect-ratio:4/5;object-fit:cover;border-radius:30px;border:1px solid #303846;box-shadow:0 35px 110px #000b;filter:saturate(.9)}
+.idcard{margin-top:18px;border:1px solid #29303c;background:#090c12cc;border-radius:20px;padding:18px;font-family:ui-monospace,monospace;font-size:.76rem;color:#8e99aa}
+.idrow{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid #ffffff09;padding:7px 0}.idrow:last-child{border:0}
+.green{color:var(--green)}.cyan{color:var(--cyan)}.violet{color:var(--violet)}
+section{padding:105px 0;border-top:1px solid #ffffff09;position:relative}
+h2{font-size:clamp(2.4rem,5.5vw,5rem);line-height:.95;letter-spacing:-.055em;margin:9px 0 20px}
+h3{margin:4px 0 8px;font-size:1.35rem}
+.small{font-size:.84rem}.muted{color:var(--muted)}
+.sectionHead{max-width:800px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin-top:40px}
+.card{border:1px solid #242b37;background:linear-gradient(145deg,#0e1219,#080a0e);border-radius:20px;padding:21px}
+.card strong{display:block;font-size:1.7rem;margin-bottom:2px}
+.modeBar{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.mode{padding:12px 15px;border:1px solid #293140;background:#0b0e14;border-radius:13px;color:#cbd3df;cursor:pointer}
+.mode.active,.mode:hover{border-color:#5d6a7d;color:#fff}
+.modePanel{margin-top:16px;display:none}.modePanel.active{display:block}
+.quick{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.quick .card{min-height:170px}
+.process{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-top:35px}
+.step{border:1px solid #252d39;background:#0b0e14;border-radius:15px;padding:18px 10px;text-align:center;position:relative}
+.step:not(:last-child):after{content:"→";position:absolute;right:-11px;top:50%;color:#687487;z-index:2}
+.num{font-family:ui-monospace,monospace;color:#667386;font-size:.7rem}
+.projects{display:grid;gap:22px;margin-top:32px}
+.project{border:1px solid #28303c;border-radius:28px;background:linear-gradient(145deg,#10141c,#080a0e);padding:28px;overflow:hidden}
+.projectTop{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
+.tags,.skills{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}
+.tag,.skill{padding:7px 10px;border-radius:999px;background:#171c25;color:#c7d0dc;border:1px solid #252d38;font-size:.76rem}
+.projectGrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}
+.projectGrid img,.gallery img{width:100%;display:block;border-radius:16px;border:1px solid #2a323e;background:#07090d}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.wide{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.arch{margin-top:25px;border:1px solid #252e3a;border-radius:20px;padding:25px;background:#07090d;font-family:ui-monospace,monospace}
+.archLine{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:12px}.node{padding:12px 16px;border:1px solid #394555;border-radius:12px;background:#0e131b}.arrow{color:var(--cyan)}
+.evidence{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:28px}
+.evidence .card{min-height:145px}
+.forensics{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:25px}
+.forensic{border:1px solid #28313d;border-radius:18px;padding:20px;background:#0a0d12}
+.timeline{border-left:1px solid #303846;margin:35px 0 0 8px;padding-left:28px}
+.item{margin-bottom:34px;position:relative}.item:before{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:var(--violet);left:-34px;top:7px;box-shadow:0 0 18px #9d8cff88}
+.terminal{border:1px solid #29313d;background:#06080c;border-radius:20px;overflow:hidden;margin-top:28px;box-shadow:0 25px 80px #0008}
+.termTop{padding:11px 15px;border-bottom:1px solid #202733;color:#7f8999;font:12px ui-monospace,monospace}
+.termBody{padding:22px;font:14px/1.9 ui-monospace,monospace;min-height:260px;color:#b7c1cf}
+.prompt{color:var(--green)}
+.termInput{background:transparent;border:0;outline:0;color:#fff;font:inherit;width:70%}
+.skillGraph{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:28px}
+.skillNode{padding:18px;border:1px solid #29313d;border-radius:15px;background:#0b0f15;text-align:center}
+.labGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+.status{display:flex;align-items:center;gap:8px;font-size:.78rem;color:#9aa4b4}.dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 12px #72f2a0}
+.failure{border-left:2px solid var(--red);padding-left:18px}
+.quote{font-size:clamp(1.4rem,3vw,2.3rem);line-height:1.15;max-width:900px;margin-top:35px}
+.secret{border:1px dashed #384250;border-radius:18px;padding:22px;background:#080a0f;cursor:pointer}
+.secretContent{display:none;margin-top:16px}.secret.open .secretContent{display:block}
+.contactBox{display:flex;justify-content:space-between;gap:30px;align-items:center;border:1px solid #2b3441;border-radius:28px;padding:35px;background:radial-gradient(circle at 80% 20%,#6659ff20,transparent 40%),#0b0e14}
+footer{padding:50px 0;color:#6f7989;border-top:1px solid #ffffff09}
+.back{position:fixed;right:20px;bottom:20px;z-index:20;display:none}
+.back.show{display:block}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:900px){
+ .heroGrid{grid-template-columns:1fr}.portrait{max-width:330px}.stats{grid-template-columns:1fr 1fr}
+ .process{grid-template-columns:1fr 1fr}.step:not(:last-child):after{display:none}
+ .projectGrid,.quick{grid-template-columns:1fr}.evidence,.forensics{grid-template-columns:1fr 1fr}.labGrid{grid-template-columns:1fr 1fr}
+ .skillGraph{grid-template-columns:1fr 1fr}.navlinks{display:none}.menu{display:block}
+}
+@media(max-width:560px){
+ h1{font-size:4rem}.stats,.evidence,.forensics,.labGrid,.skillGraph,.gallery,.wide{grid-template-columns:1fr}
+ .contactBox{flex-direction:column;align-items:flex-start}.projectTop{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wrap navin"><a class="logo" href="#top">SARAYU // SYSTEM</a><div class="navlinks">
+<a href="#about">ABOUT</a><a href="#think">THINK</a><a href="#projects">BUILD</a><a href="#proof">PROOF</a><a href="#lab">LAB</a><a href="#journey">JOURNEY</a><a href="#contact">CONTACT</a>
+</div><button class="menu" onclick="window.scrollTo({top:0,behavior:'smooth'})">TOP ↑</button></div></nav>
+
+<header class="hero" id="top">
+<div class="orb o1"></div><div class="orb o2"></div>
+<div class="wrap heroGrid">
+<div class="reveal">
+<div class="boot">INITIALIZING SARAYU.OS... <b>[100%]</b><br>PROJECTS LOADED · EVIDENCE LOADED · SYSTEM READY</div>
+<div class="kicker">B.Tech Student · Software + AI/ML</div>
+<h1>BUILDING.<br><span class="grad">THINGS.</span><br>THAT WORK.</h1>
+<p class="lead">I'm Sarayu Channa — an aspiring software developer and AI/ML enthusiast building practical applications, experimenting with intelligent systems, and learning through real projects.</p>
+<div class="buttons"><a class="btn primary" href="#projects">ENTER THE SYSTEM ↓</a><a class="btn" href="https://github.com/2410080013-oss" target="_blank">GITHUB ↗</a><a class="btn" href="https://www.linkedin.com/in/sarayu-channa-539260369/" target="_blank">LINKEDIN ↗</a></div>
+</div>
+<div class="reveal">
+<img class="portrait" src="assets/sarayu-photo.jpg" alt="Sarayu Channa">
+<div class="idcard">
+<div class="idrow"><span>IDENTITY</span><span class="cyan">SARAYU CHANNA</span></div>
+<div class="idrow"><span>ROLE</span><span>B.TECH STUDENT</span></div>
+<div class="idrow"><span>FOCUS</span><span>SOFTWARE + AI/ML</span></div>
+<div class="idrow"><span>STATUS</span><span class="green">● BUILDING</span></div>
+</div>
+</div>
+</div></header>
+
+<section id="about"><div class="wrap reveal"><div class="label">01 / IDENTITY</div><h2>A portfolio designed like a product.</h2><p class="lead">This is not a claim wall. It is a map of projects, evidence, decisions, experiments and the direction I'm learning toward.</p>
+<div class="stats"><div class="card"><strong>02</strong><span class="muted">Featured projects</span></div><div class="card"><strong>01</strong><span class="muted">Live AI application</span></div><div class="card"><strong>PY</strong><span class="muted">Primary build language</span></div><div class="card"><strong>∞</strong><span class="muted">Things left to learn</span></div></div></div></section>
+
+<section id="recruiter"><div class="wrap reveal"><div class="label">02 / RECRUITER MODE</div><h2>Need the signal fast?</h2><p class="lead">Choose a view. The site changes emphasis without hiding the underlying work.</p>
+<div class="modeBar"><button class="mode active" data-mode="quick">⚡ QUICK SCAN</button><button class="mode" data-mode="builder">🛠 BUILDER VIEW</button><button class="mode" data-mode="evidence">🔬 EVIDENCE VIEW</button></div>
+<div id="quick" class="modePanel active quick"><div class="card"><div class="label">WHO</div><h3>B.Tech Student</h3><p class="muted">Software + AI/ML focus.</p></div><div class="card"><div class="label">WHAT</div><h3>Practical Projects</h3><p class="muted">AI application development and computer vision.</p></div><div class="card"><div class="label">PROOF</div><h3>Code + Deployment + Evaluation</h3><p class="muted">Public repositories, live app and model evidence.</p></div><div class="card"><div class="label">STACK</div><h3>Python · Java · TensorFlow</h3><p class="muted">Plus Streamlit, OpenCV, Git and Generative AI.</p></div></div>
+<div id="builder" class="modePanel quick"><div class="card"><div class="label">PROCESS</div><h3>Understand → Build → Test → Iterate</h3><p class="muted">Projects are presented through implementation and evidence.</p></div><div class="card"><div class="label">STYLE</div><h3>Learn by Building</h3><p class="muted">Current direction: DSA, ML and software development.</p></div></div>
+<div id="evidence" class="modePanel quick"><div class="card"><div class="label">AI APP</div><h3>Live Streamlit Deployment</h3><a class="btn" href="https://smart-student-buddy.streamlit.app/" target="_blank">OPEN DEMO ↗</a></div><div class="card"><div class="label">VISION</div><h3>Accuracy · Loss · Confusion Matrix</h3><a class="btn" href="#proof">VIEW EVIDENCE ↓</a></div></div>
 </div></section>
-<section id="skills"><div class="wrap"><div class="label">03 / Skills</div><h2>The toolkit.</h2><p class="lead">Technologies used across coursework, projects and experimentation.</p><div class="skills"><span class="skill">Python</span><span class="skill">Java</span><span class="skill">C</span><span class="skill">Data Structures & Algorithms</span><span class="skill">TensorFlow</span><span class="skill">Keras</span><span class="skill">CNN</span><span class="skill">Computer Vision</span><span class="skill">Generative AI</span><span class="skill">Streamlit</span><span class="skill">OpenCV</span><span class="skill">Git</span><span class="skill">GitHub</span></div></div></section>
-<section id="journey"><div class="wrap"><div class="label">04 / Build journey</div><h2>Learning by building.</h2><div class="timeline"><div class="item"><h3>AI Application Development</h3><p class="muted">Built and deployed Smart Student Buddy with multiple student-focused AI workflows.</p></div><div class="item"><h3>Deep Learning + Computer Vision</h3><p class="muted">Built a CNN-based facial-expression classifier and evaluated it with accuracy/loss curves and a confusion matrix.</p></div><div class="item"><h3>Current focus</h3><p class="muted">Strengthening DSA, machine learning and production-oriented software development.</p></div></div></div></section>
-<section id="contact"><div class="wrap"><div class="label">05 / Contact</div><h2>Let's build the next thing.</h2><p class="lead">Explore the projects, inspect the code and follow the build journey.</p><div class="buttons"><a class="btn primary" href="https://github.com/2410080013-oss" target="_blank">GitHub ↗</a><a class="btn" href="https://www.linkedin.com/in/sarayu-channa-539260369/" target="_blank">LinkedIn ↗</a></div></div></section>
-<footer><div class="wrap">© 2026 Sarayu Channa · Built with HTML, CSS & curiosity.</div></footer>
-</body></html>
+
+<section id="think"><div class="wrap reveal"><div class="label">03 / HOW I THINK</div><h2>Break the problem.<br>Build the answer.</h2><p class="lead">A simple working loop behind my projects.</p>
+<div class="process"><div class="step"><div class="num">01</div><b>UNDERSTAND</b></div><div class="step"><div class="num">02</div><b>BREAK DOWN</b></div><div class="step"><div class="num">03</div><b>DESIGN</b></div><div class="step"><div class="num">04</div><b>BUILD</b></div><div class="step"><div class="num">05</div><b>TEST</b></div><div class="step"><div class="num">06</div><b>DEBUG</b></div><div class="step"><div class="num">07</div><b>IMPROVE</b></div></div>
+<p class="quote">“The goal is not to make a project look finished. The goal is to make the work understandable, testable and useful.”</p>
+</div></section>
+
+<section id="projects"><div class="wrap reveal"><div class="label">04 / PROJECT CONTROL ROOM</div><h2>Projects you can inspect.</h2><p class="lead">Open the interfaces, study the evidence and inspect the source.</p>
+<div class="projects">
+<article class="project"><div class="projectTop"><div><div class="label">PROJECT 001 / AI APPLICATION</div><h3>Smart Student Buddy</h3><p class="muted">AI-powered student assistant with AI Doubt Solver, Study Planner, Notes Assistant, Quiz Generator and College Assistant.</p></div><a class="btn primary" href="https://smart-student-buddy.streamlit.app/" target="_blank">LIVE DEMO ↗</a></div>
+<div class="tags"><span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">Google Gemini</span><span class="tag">Generative AI</span></div>
+<div class="forensics"><div class="forensic"><div class="label">DNA</div><h3>Academic Assistant</h3><p class="muted small">Multiple student workflows inside one application.</p></div><div class="forensic"><div class="label">STATUS</div><h3 class="green">● DEPLOYED</h3><p class="muted small">Public Streamlit demo.</p></div><div class="forensic"><div class="label">SOURCE</div><h3>GitHub</h3><a class="btn" href="https://github.com/2410080013-oss/smart-student-buddy" target="_blank">INSPECT CODE ↗</a></div></div>
+<div class="arch"><div class="archLine"><span class="node">STUDENT</span><span class="arrow">→</span><span class="node">STREAMLIT UI</span><span class="arrow">→</span><span class="node">AI SERVICE</span><span class="arrow">→</span><span class="node">GEMINI</span><span class="arrow">→</span><span class="node">RESPONSE</span></div></div>
+<div class="gallery"><img src="assets/smart-home.png" alt="Smart Student Buddy home"><img src="assets/smart-ai-doubt-solver.png" alt="AI Doubt Solver"><img src="assets/smart-study-planner.png" alt="Study Planner"><img src="assets/smart-notes.png" alt="Notes Assistant"><img src="assets/smart-quiz.png" alt="Quiz Generator"><img src="assets/smart-college-assistant.png" alt="College Assistant"></div>
+</article>
+
+<article class="project"><div class="projectTop"><div><div class="label">PROJECT 002 / DEEP LEARNING + COMPUTER VISION</div><h3>Real-Time Facial Expression Detection</h3><p class="muted">TensorFlow/Keras CNN project using FER-2013 and OpenCV to classify visible facial expressions. The portfolio uses model-evaluation evidence without requiring a personal webcam photo.</p></div><a class="btn" href="https://github.com/2410080013-oss/real-time-emotion-detection" target="_blank">GITHUB ↗</a></div>
+<div class="tags"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Keras</span><span class="tag">CNN</span><span class="tag">OpenCV</span><span class="tag">FER-2013</span></div>
+<div class="forensics"><div class="forensic"><div class="label">DNA</div><h3>Computer Vision</h3><p class="muted small">CNN-based visible-expression classification.</p></div><div class="forensic"><div class="label">EVIDENCE</div><h3>3 Evaluation Artifacts</h3><p class="muted small">Accuracy curve, loss curve and confusion matrix.</p></div><div class="forensic"><div class="label">SOURCE</div><h3>GitHub</h3><a class="btn" href="https://github.com/2410080013-oss/real-time-emotion-detection" target="_blank">INSPECT CODE ↗</a></div></div>
+<div class="wide"><img src="assets/emotion-accuracy.png" alt="Training and validation accuracy graph"><img src="assets/emotion-loss.png" alt="Training and validation loss graph"></div>
+<div class="wide"><img src="assets/emotion-confusion-matrix.png" alt="Confusion matrix"></div>
+</article></div></div></section>
+
+<section id="proof"><div class="wrap reveal"><div class="label">05 / PROOF WALL</div><h2>Proof, not promises.</h2><p class="lead">The strongest claims on this site point to something you can actually inspect.</p>
+<div class="evidence"><div class="card"><div class="label">DEPLOYMENT</div><h3>Live AI Application</h3><p class="muted">Smart Student Buddy is publicly accessible.</p><a class="btn" href="https://smart-student-buddy.streamlit.app/" target="_blank">OPEN ↗</a></div><div class="card"><div class="label">SOURCE</div><h3>Public GitHub</h3><p class="muted">Explore the implementation and project history.</p><a class="btn" href="https://github.com/2410080013-oss" target="_blank">PROFILE ↗</a></div><div class="card"><div class="label">EVALUATION</div><h3>Model Evidence</h3><p class="muted">Training curves and confusion matrix from the vision project.</p><a class="btn" href="#projects">INSPECT ↑</a></div></div></div></section>
+
+<section id="lab"><div class="wrap reveal"><div class="label">06 / ENGINEERING LAB</div><h2>Experiments in progress.</h2><p class="lead">A living map of what is built, what is being learned and what comes next.</p>
+<div class="labGrid"><div class="card"><div class="status"><span class="dot"></span> BUILT</div><h3>AI Applications</h3><p class="muted small">Smart Student Buddy</p></div><div class="card"><div class="status"><span class="dot"></span> BUILT</div><h3>Computer Vision</h3><p class="muted small">Facial-expression classifier</p></div><div class="card"><div class="status"><span class="dot"></span> ACTIVE</div><h3>Data Structures</h3><p class="muted small">Problem-solving practice</p></div><div class="card"><div class="status"><span class="dot"></span> ACTIVE</div><h3>Machine Learning</h3><p class="muted small">Building deeper fundamentals</p></div></div></div></section>
+
+<section id="debug"><div class="wrap reveal"><div class="label">07 / FAILURE LAB</div><h2>Build. Break. Learn.</h2><div class="failure card"><h3>Real development is not a straight line.</h3><p class="muted">This section is reserved for real bugs, failed approaches and fixes from the projects — documented when there is evidence for them.</p><p class="small"><span class="cyan">RULE:</span> no invented success stories. Only actual engineering lessons.</p></div></div></section>
+
+<section id="journey"><div class="wrap reveal"><div class="label">08 / BUILD JOURNEY</div><h2>Learning by building.</h2><div class="timeline">
+<div class="item"><div class="label">01 / AI APPLICATIONS</div><h3>Smart Student Buddy</h3><p class="muted">Built a multi-feature student assistant and deployed it as a public Streamlit application.</p></div>
+<div class="item"><div class="label">02 / COMPUTER VISION</div><h3>Facial Expression Detection</h3><p class="muted">Built a CNN-based classifier and evaluated it with accuracy, loss and confusion-matrix artifacts.</p></div>
+<div class="item"><div class="label">03 / CURRENT FOCUS</div><h3>DSA · ML · SOFTWARE DEVELOPMENT</h3><p class="muted">Continuing to strengthen fundamentals and production-oriented development.</p></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap reveal"><div class="label">09 / SKILL GRAPH</div><h2>The toolkit.</h2><div class="skillGraph">
+<div class="skillNode">Python<br><span class="muted small">primary</span></div><div class="skillNode">Java<br><span class="muted small">programming</span></div><div class="skillNode">C<br><span class="muted small">programming</span></div><div class="skillNode">DSA<br><span class="muted small">learning</span></div><div class="skillNode">TensorFlow<br><span class="muted small">ML</span></div>
+<div class="skillNode">Keras<br><span class="muted small">deep learning</span></div><div class="skillNode">OpenCV<br><span class="muted small">vision</span></div><div class="skillNode">Generative AI<br><span class="muted small">applications</span></div><div class="skillNode">Streamlit<br><span class="muted small">apps</span></div><div class="skillNode">Git/GitHub<br><span class="muted small">version control</span></div>
+</div></div></section>
+
+<section id="terminal"><div class="wrap reveal"><div class="label">10 / TERMINAL MODE</div><h2>Talk to the system.</h2><div class="terminal"><div class="termTop">Sarayu@portfolio:~ — interactive shell</div><div class="termBody" id="termBody">
+<div><span class="prompt">Sarayu@portfolio:~$</span> whoami</div>
+<div>B.Tech student · Software + AI/ML</div>
+<div><span class="prompt">Sarayu@portfolio:~$</span> ls projects/</div>
+<div>smart-student-buddy&nbsp;&nbsp;&nbsp; real-time-emotion-detection&nbsp;&nbsp;&nbsp; portfolio</div>
+<div><span class="prompt">Sarayu@portfolio:~$</span> <input id="termInput" class="termInput" aria-label="Terminal command" placeholder="try: help"></div>
+</div></div></div></section>
+
+<section id="ask"><div class="wrap reveal"><div class="label">11 / ASK THE PORTFOLIO</div><h2>Choose a question.</h2><p class="lead">Answers are intentionally limited to information represented on this site.</p>
+<div class="buttons"><button class="btn ask" data-answer="Smart Student Buddy is a deployed AI-powered student assistant built with Python, Streamlit and Google Gemini. It includes AI Doubt Solver, Study Planner, Notes Assistant, Quiz Generator and College Assistant.">What is Smart Student Buddy?</button><button class="btn ask" data-answer="The computer-vision project uses TensorFlow/Keras, a CNN, FER-2013 and OpenCV, with accuracy, loss and confusion-matrix artifacts shown on this site.">How was the vision project evaluated?</button><button class="btn ask" data-answer="The current focus shown here is DSA, machine learning and software development.">What is Sarayu learning?</button></div>
+<div class="card" id="answer" style="margin-top:18px">Select a question above.</div></div></section>
+
+<section id="learning"><div class="wrap reveal"><div class="label">12 / LEARNING MAP</div><h2>Current direction.</h2><div class="stats"><div class="card"><strong>DSA</strong><span class="muted">Problem solving</span></div><div class="card"><strong>ML</strong><span class="muted">Machine learning</span></div><div class="card"><strong>AI</strong><span class="muted">Application development</span></div><div class="card"><strong>ENG</strong><span class="muted">Software development</span></div></div></div></section>
+
+<section id="decisions"><div class="wrap reveal"><div class="label">13 / DECISION LOG</div><h2>Why this stack?</h2><div class="forensics">
+<div class="forensic"><div class="label">STREAMLIT</div><h3>Fast application UI</h3><p class="muted small">Used in Smart Student Buddy for its interactive Python-based interface.</p></div>
+<div class="forensic"><div class="label">TENSORFLOW / KERAS</div><h3>Deep learning</h3><p class="muted small">Used for the CNN-based facial-expression project.</p></div>
+<div class="forensic"><div class="label">GITHUB</div><h3>Source + history</h3><p class="muted small">Public repositories make implementation inspectable.</p></div>
+</div></div></section>
+
+<section id="secret"><div class="wrap reveal"><div class="label">14 / SECRET ARCHIVE</div><h2>There is one more layer.</h2><div class="secret" id="secretBox"><b>ACCESS FILE // 2410080013</b><div class="secretContent"><p class="muted">You found the hidden layer. The real Easter egg is simple: this portfolio is designed to keep evolving as the projects do.</p><button class="btn" onclick="document.getElementById('top').scrollIntoView({behavior:'smooth'})">RESTART SYSTEM ↻</button></div></div></div></section>
+
+<section id="contact"><div class="wrap reveal"><div class="contactBox"><div><div class="label">15 / END CREDITS</div><h2>Still building.</h2><p class="lead">Explore the code. Open the demo. Follow the next build.</p></div><div class="buttons"><a class="btn primary" href="https://github.com/2410080013-oss" target="_blank">GITHUB ↗</a><a class="btn" href="https://www.linkedin.com/in/sarayu-channa-539260369/" target="_blank">LINKEDIN ↗</a><a class="btn" href="https://smart-student-buddy.streamlit.app/" target="_blank">LIVE DEMO ↗</a></div></div></div></section>
+
+<footer><div class="wrap">© 2026 Sarayu Channa · SARAYU // SYSTEM · Built with HTML, CSS & curiosity.</div></footer>
+<button class="btn back" id="back">↑ TOP</button>
+
+<script>
+const modes=document.querySelectorAll('.mode');
+const panels=document.querySelectorAll('.modePanel');
+modes.forEach(m=>m.addEventListener('click',()=>{
+  modes.forEach(x=>x.classList.remove('active'));panels.forEach(x=>x.classList.remove('active'));
+  m.classList.add('active');document.getElementById(m.dataset.mode).classList.add('active');
+}));
+document.querySelectorAll('.ask').forEach(b=>b.addEventListener('click',()=>document.getElementById('answer').textContent=b.dataset.answer));
+document.getElementById('secretBox').addEventListener('click',e=>{
+  if(e.target.closest('button')) return;
+  document.getElementById('secretBox').classList.toggle('open');
+});
+const input=document.getElementById('termInput'), body=document.getElementById('termBody');
+input.addEventListener('keydown',e=>{
+  if(e.key!=='Enter') return;
+  const cmd=input.value.trim().toLowerCase();
+  let out='';
+  if(cmd==='help') out='commands: help · whoami · projects · skills · contact · clear';
+  else if(cmd==='whoami') out='Sarayu Channa — B.Tech student · Software + AI/ML';
+  else if(cmd==='projects') out='smart-student-buddy | real-time-emotion-detection | portfolio';
+  else if(cmd==='skills') out='Python | Java | C | TensorFlow | Keras | OpenCV | Streamlit | Git/GitHub | Generative AI';
+  else if(cmd==='contact') out='GitHub + LinkedIn links are available in the Contact section.';
+  else if(cmd==='clear'){body.innerHTML='<div><span class="prompt">Sarayu@portfolio:~$</span> <input id="termInput" class="termInput" aria-label="Terminal command" placeholder="try: help"></div>';bindInput();return}
+  else out='command not found — try: help';
+  const line=document.createElement('div');line.innerHTML='<span class="prompt">Sarayu@portfolio:~$</span> '+(cmd||'');
+  const result=document.createElement('div');result.textContent=out;
+  body.insertBefore(line,body.lastElementChild);body.insertBefore(result,body.lastElementChild);
+  input.value='';
+});
+function bindInput(){document.getElementById('termInput').addEventListener('keydown',e=>{if(e.key==='Enter'){document.getElementById('termInput').dispatchEvent(new KeyboardEvent('keydown',{key:'Enter'}))}})}
+const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(x=>observer.observe(x));
+const back=document.getElementById('back');
+window.addEventListener('scroll',()=>back.classList.toggle('show',scrollY>700));
+back.addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+</script>
+</body>
+</html>
